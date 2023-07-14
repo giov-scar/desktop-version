@@ -1,0 +1,309 @@
+body {
+  background-color: black;
+}
+
+#search-input {
+  border-radius: 10px;
+  padding: 20px 30px;
+  border: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 100%;
+  opacity: 0.6;
+}
+
+#search-input:hover {
+  border: 1px solid #ced4da;
+}
+
+#search-input:focus {
+  outline: none;
+  border: 2px solid white;
+}
+
+#search-input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+#search-input:-ms-input-placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+#search-input::-ms-input-placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+#buttons-search-container {
+  display: none;
+}
+
+.buttons-search a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5em;
+  background-color: black;
+  border: none;
+  text-align: center;
+  opacity: 0.5;
+}
+
+#sub-title {
+  display: none;
+}
+
+#card1,
+#card8,
+#card17,
+#card25,
+#card33,
+#card39,
+#card48,
+#card52 {
+  background-color: orangered;
+
+  height: 14vh;
+  width: 17rem;
+}
+
+#card2,
+#card6,
+#card19,
+#card29,
+#card34,
+#card42,
+#card49,
+#card51 {
+  background-color: rgb(186, 62, 240);
+
+  height: 14vh;
+  width: 17rem;
+}
+
+#card3,
+#card7,
+#card14,
+#card20,
+#card28,
+#card34,
+#card43,
+#card49 {
+  background-color: rgb(32, 46, 246);
+
+  height: 14vh;
+  width: 17rem;
+}
+
+#card4,
+#card9,
+#card13,
+#card16,
+#card22,
+#card27,
+#card32,
+#card36,
+#card41 {
+  background-color: rgb(57, 136, 14);
+
+  height: 14vh;
+  width: 17rem;
+}
+
+#card5,
+#card10,
+#card15,
+#card21,
+#card30,
+#card38,
+#card47,
+#card50 {
+  background-color: rgb(235, 10, 10);
+
+  height: 14vh;
+  width: 17rem;
+}
+
+#card11,
+#card18,
+#card23,
+#card31,
+#card35,
+#card39,
+#card43,
+#card50 {
+  background-color: rgb(164, 155, 155);
+  height: 14vh;
+  width: 17rem;
+}
+
+#card12,
+#card24,
+#card26,
+#card37,
+#card40,
+#card44,
+#card45,
+#card46 {
+  background-color: rgb(251, 218, 1);
+
+  height: 14vh;
+  width: 17rem;
+}
+
+#card-imgs {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotate(25deg);
+}
+
+a {
+  text-decoration: none;
+}
+
+#images-grid #artist-img {
+  position: relative;
+  width: 50px;
+  transform: rotate(0deg);
+}
+
+#card-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#card-imgs {
+  display: none;
+}
+
+#cerca {
+  display: block;
+  color: white;
+  margin-top: 100px;
+}
+
+#sfoglia {
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  #card-imgs {
+    display: block;
+  }
+
+  #card-col .card {
+    height: 14vh !important;
+    width: 14vh !important;
+  }
+
+  #buttons-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #cerca {
+    display: none;
+  }
+
+  #sub-title {
+    display: block;
+    color: white;
+  }
+
+  #sfoglia {
+    text-align: start;
+  }
+
+  #search-input {
+    border-radius: 40px;
+    padding: 20px 30px;
+    border: none;
+    opacity: 0.6;
+  }
+
+  #search-button-container {
+    display: none;
+  }
+
+  #footer-mobile {
+    display: block;
+  }
+}
+
+#search-button {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: none;
+  text-align: center;
+  opacity: 0.6;
+}
+
+#plus-button {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: none;
+  text-align: center;
+  background-color: rgb(18, 18, 18);
+}
+
+#card-carousel {
+  transition: 1.2s ease;
+}
+
+#card-carousel:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+#footer-mobile ul {
+  text-decoration: none;
+  list-style-type: none;
+
+  padding-left: 0;
+}
+
+#footer-desktop {
+  display: none;
+}
+
+#card-col {
+  transition: 1.2s ease;
+}
+
+#card-col:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+@media screen and (min-width: 1000px) {
+  #footer-desktop {
+    display: block;
+  }
+
+  #footer-mobile {
+    display: none;
+  }
+}
